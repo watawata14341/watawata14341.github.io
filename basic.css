@@ -1,10 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 body{
-font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+/*font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;*/
 margin:0;
 color:#313131;
+background-color: #777171;
 }
 
 img{
@@ -86,6 +88,8 @@ header p{
 }
 
 .div-right-w{
+    font-family: "Hiragino Kaku Gothic Std";
+    font-weight: bolder;
     display: block;
     width: 30%;
     height: 300px;
@@ -151,7 +155,7 @@ header p{
 
 
 #svg-animation{
-    background-color: #ffffff;
+    background-color:#777171;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -164,7 +168,7 @@ header p{
 
 #svg-animation .st0{
     fill:none;
-    stroke: #ffffff;;
+    stroke: #ffffff;
     stroke-width:20;
     stroke-linecap:round;
     stroke-linejoin:round;
