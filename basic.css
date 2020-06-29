@@ -6,7 +6,8 @@ body{
 /*font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;*/
 margin:0;
 color:#313131;
-background-color: #777171;
+background-image: url("image/IMG_2107.JPG");
+background-size: cover;
 }
 
 img{
@@ -47,7 +48,7 @@ header h1{
     text-align: center;
     letter-spacing: 5px;
     color: #000000;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 20px;
@@ -71,7 +72,7 @@ header p{
     overflow: hidden;
     width: 30%;
     height: 300px;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: 20%;
     margin-bottom: 20px;
     border: 5px solid #5e5959;
@@ -94,7 +95,7 @@ header p{
     width: 30%;
     height: 300px;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
 }
 
@@ -113,7 +114,7 @@ header p{
     width: 30%;
     height: 300px;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
     margin-left: 20%;
     margin-bottom: 20px;
 }
@@ -132,7 +133,7 @@ header p{
     overflow: hidden;
     width: 30%;
     height: 300px;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
     border: 5px solid #5e5959;
     border-radius: 5px;
@@ -155,7 +156,7 @@ header p{
 
 
 #svg-animation{
-    background-color:#777171;
+    background-color:rgba(255, 255, 255, 0.3);
     position: absolute;
     top: 0px;
     right: 0px;
