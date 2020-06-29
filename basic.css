@@ -3,11 +3,12 @@
 
 
 body{
-/*font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;*/
-margin:0;
-color:#313131;
-background-image: url("image/IMG_2107.JPG");
-background-size: cover;
+    font: "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+    margin:0;
+    color:#313131;
+    background-image: url("image/IMG_2107.JPG");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 img{
@@ -43,8 +44,8 @@ header{
 }
 
 header h1{
-    font-family: 'Alex Brush', cursive;
-    font-size: 700%;
+    font-family: 'Araial Black', cursive;
+    font-size: 500%;
     text-align: center;
     letter-spacing: 5px;
     color: #000000;
@@ -72,7 +73,7 @@ header p{
     overflow: hidden;
     width: 30%;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-left: 20%;
     margin-bottom: 20px;
     border: 5px solid #5e5959;
@@ -80,7 +81,7 @@ header p{
 }
 
 .div-left-b p{
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Araial Black', cursive;
     color: #fff;
     /*letter-spacing: 5px;*/
     text-align: center;
@@ -95,7 +96,7 @@ header p{
     width: 30%;
     height: 300px;
     overflow: hidden;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.7);
     margin-bottom: 20px;
 }
 
@@ -114,7 +115,7 @@ header p{
     width: 30%;
     height: 300px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     margin-left: 20%;
     margin-bottom: 20px;
 }
@@ -133,7 +134,7 @@ header p{
     overflow: hidden;
     width: 30%;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
     border: 5px solid #5e5959;
     border-radius: 5px;
@@ -152,8 +153,6 @@ header p{
     overflow: hidden;
     text-align: center;
 }
-
-
 
 #svg-animation{
     background-color:rgba(255, 255, 255, 0.3);
