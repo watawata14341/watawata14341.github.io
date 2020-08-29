@@ -1,23 +1,12 @@
-//切り替えボタン要素を指定
-const back1 = document.getElementById('blue');
-const back2 = document.getElementById('red');
-//ターゲット要素を指定
-const target = document.getElementById('target');
+let backflag;
 
-//blueボタンが押された時
-back1.addEventListener('click', function() {
-  
-　　target.style.background = '#FF1744';
-  
-}, false);
-
-//redボタンが押された時
-red.addEventListener('click', function() {
-  
-　　target.style.background = '#0091EA';
-  
-}, false);
-
-function chBackcolor(color) {
-    document.body.style.background = color;
- }
+function ChangeBack() {
+    if(backflag){
+        document.body.style.backgroundImage='url(image/IMG_2106.JPG)';
+        backflag = false;
+    }
+    else{
+        document.body.style.backgroundImage='url(image/IMG_2107.JPG)';
+        backflag = true;
+    }
+};
