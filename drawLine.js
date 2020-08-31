@@ -8,10 +8,12 @@ $(function(){
     
 $(function(){
     $(".main").css({opacity:'0'});
-    setTimeout(function(){
-    $(".main").css("display", "block");
-    $(".main").stop().animate({opacity:'1'},1000);//1秒かけてコンテンツを表示
-    },3800);//約4秒後に
+    setTimeout(
+        function(){
+            $(".main").css("display", "block");
+            $(".main").stop().animate({opacity:'1'},1000);//1秒かけてコンテンツを表示
+        },3800
+    );//約4秒後に
 });
 
 new Vivus("svg-animation", {
