@@ -11,30 +11,6 @@ body{
     background-attachment: fixed;
 }
 
-img{
-outline:none;
-border-style:none;
-}
-
-a{
-    color:blue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-a:visited{
-    color:blue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-a:hover {
-    color: #F5A862;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
 /*****HEADER*****/
 header{
     display: block;
@@ -178,3 +154,77 @@ header p{
     stroke-dasharray: 1500;
     stroke-dashoffset:1500;
 }
+
+.fixed {
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+  
+  
+.fixed.bg1 {
+    height: 100vh;
+}
+
+.fixed.bg1 .flake1 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Drop;
+    animation-name: Drop;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    left: -20px;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+  }
+
+  @keyframes Drop {
+    0% {
+      /*-webkit-transform: translateY(-200px);*/
+      transform: translateY(-200px);
+      opacity: 1;
+    }
+  
+    75% {
+      /*-webkit-transform: translateY(100vh);*/
+      transform: translateY(100vh) translateX(200px);
+      opacity: 0.0;
+    }
+  }
+
+  @-webkit-keyframes Drop {
+    0% {
+      /*-webkit-transform: translateY(-200px);*/
+      /*transform: translateY(-200px);*/
+      opacity: 0.5;
+    }
+  
+    35% {
+      /*-webkit-transform: translateY(50vh);*/
+      /*transform: translateY(50vh);*/
+      opacity: 1;
+    }
+  
+    70% {
+      /*-webkit-transform: translateY(100vh);
+      transform: translateY(100vh);*/
+      opacity: 0.5;
+    }
+  }
