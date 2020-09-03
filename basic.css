@@ -176,7 +176,6 @@ header p{
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   
-    left: -20px;
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
@@ -188,9 +187,217 @@ header p{
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
-  }
+}
 
-  @keyframes Snow {
+.bg .snow2 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+.bg .snow3 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+.bg .snow4 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+.bg .snow5 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+.bg .snow6 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+.bg .snow7 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+.bg .snow8 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+.bg .snow9 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+    z-index: -100;
+}
+
+@keyframes Snow {
     0% {
       transform: translateY(-200px);
       opacity: 1.0;
@@ -200,9 +407,9 @@ header p{
       transform: translateY(80vh) translateX(200px);
       opacity: 0.0;
     }
-  }
+}
 
-  @-webkit-keyframes Snow {
+@-webkit-keyframes Snow {
     0% {
       -webkit-transform: translateY(-200px);
       opacity: 1.0;
@@ -212,4 +419,4 @@ header p{
       -webkit-transform: translateY(80vh) translateX(200px);
       opacity: 0.5;
     }
-  }
+}
