@@ -178,12 +178,12 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.0s;
+    animation-delay: 0.0s;
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
@@ -204,13 +204,13 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
     left: 10vw;
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
@@ -231,13 +231,13 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 8.0s;
+    animation-delay: 8.0s;
     left: 20vw;
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
@@ -258,13 +258,13 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 6.0s;
+    animation-delay: 6.0s;
     left: 30vw;
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
@@ -285,8 +285,8 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
     left: 40vw;
     position: absolute;
     display: block;
@@ -312,13 +312,13 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 10.0s;
+    animation-delay: 10.0s;
     left: 50vw;
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
@@ -339,13 +339,13 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 9.0s;
+    animation-delay: 9.0s;
     left: 60vw;
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
@@ -366,13 +366,13 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 7.0s;
+    animation-delay: 7.0s;
     left: 70vw;
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     border-radius: 100px;
     background: #f7f9fb;
     z-index: -100;
@@ -393,8 +393,8 @@ header p{
   
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 3.0s;
+    animation-delay: 3.0s;
     left: 80vw;
     position: absolute;
     display: block;
