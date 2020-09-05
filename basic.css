@@ -191,7 +191,7 @@ header p{
 
 .bg .snow2 {
     opacity: 0;
-    -webkit-transform-origin: 0px 0px;
+    -webkit-transform-origin: 10px 0px;
     transform-origin: 0px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
@@ -206,6 +206,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 10hw;
     position: absolute;
     display: block;
     width: 10px;
@@ -217,7 +218,7 @@ header p{
 
 .bg .snow3 {
     opacity: 0;
-    -webkit-transform-origin: 0px 0px;
+    -webkit-transform-origin: 20px 0px;
     transform-origin: 0px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
@@ -232,6 +233,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 20hw;
     position: absolute;
     display: block;
     width: 10px;
@@ -243,7 +245,7 @@ header p{
 
 .bg .snow4 {
     opacity: 0;
-    -webkit-transform-origin: 0px 0px;
+    -webkit-transform-origin: 30px 0px;
     transform-origin: 0px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
@@ -258,6 +260,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 30hw;
     position: absolute;
     display: block;
     width: 10px;
@@ -269,7 +272,7 @@ header p{
 
 .bg .snow5 {
     opacity: 0;
-    -webkit-transform-origin: 0px 0px;
+    -webkit-transform-origin: 40px 0px;
     transform-origin: 0px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
@@ -284,6 +287,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 40hw;
     position: absolute;
     display: block;
     width: 10px;
@@ -296,7 +300,7 @@ header p{
 .bg .snow6 {
     opacity: 0;
     -webkit-transform-origin: 0px 0px;
-    transform-origin: 0px 0px;
+    transform-origin: 50px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
     -webkit-animation-iteration-count: infinite;
@@ -310,6 +314,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 50hw;
     position: absolute;
     display: block;
     width: 10px;
@@ -322,7 +327,7 @@ header p{
 .bg .snow7 {
     opacity: 0;
     -webkit-transform-origin: 0px 0px;
-    transform-origin: 0px 0px;
+    transform-origin: 60px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
     -webkit-animation-iteration-count: infinite;
@@ -336,6 +341,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 60hw;
     position: absolute;
     display: block;
     width: 10px;
@@ -348,7 +354,7 @@ header p{
 .bg .snow8 {
     opacity: 0;
     -webkit-transform-origin: 0px 0px;
-    transform-origin: 0px 0px;
+    transform-origin: 70px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
     -webkit-animation-iteration-count: infinite;
@@ -362,6 +368,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 70hw;
     position: absolute;
     display: block;
     width: 10px;
@@ -374,7 +381,7 @@ header p{
 .bg .snow9 {
     opacity: 0;
     -webkit-transform-origin: 0px 0px;
-    transform-origin: 0px 0px;
+    transform-origin: 80px 0px;
     -webkit-animation-name: Snow;
     animation-name: Snow;
     -webkit-animation-iteration-count: infinite;
@@ -388,6 +395,7 @@ header p{
     animation-duration: 11s;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    left: 80hw;
     position: absolute;
     display: block;
     width: 10px;
