@@ -1,25 +1,146 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-body{
-    font: "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
-    margin:0;
-    color:#313131;
+body {
+    font: "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", Verdana, Arial, sans-serif;
+    margin: 0;
+    color: #313131;
     background-image: url("image/IMG_2107.JPG");
     background-size: cover;
     background-attachment: fixed;
 }
 
-/*****HEADER*****/
-header{
+/* Hamburger*/
+
+.u-visuallyHidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+
+.c-button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.p-hamburger {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #f9d8ae;
+    box-shadow: 0 0 2rem transparent;
+    outline: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.p-hamburger:hover, .p-hamburger:focus {
+    box-shadow: 0 0 .5rem rgba(255, 255, 255, .5);
+}
+
+.p-hamburger__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* 親要素に対してど真ん中に配置 */
+    width: 18px;
+    /* お肉の幅 */
+    height: 2px;
+    /* お肉の高さ */
+    background-color: #f9d8ae;
+    -webkit-transition: inherit;
+    transition: inherit;
+}
+
+.p-hamburger__line::before, .p-hamburger__line::after {
+    content: '';
+    position: absolute;
     display: block;
-    width:60%;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    -webkit-transition: inherit;
+    transition: inherit;
+}
+
+.p-hamburger__line::before {
+    top: -5px;
+}
+
+.p-hamburger__line::after {
+    top: 5px;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line {
+    background-color: transparent;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before, .p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+    top: 0;
+    background-color: #f9d8ae;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.p-drawer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+.is-drawerActive .p-drawer {
+    transform: translateX(0);
+}
+
+/*****HEADER*****/
+
+header {
+    display: block;
+    width: 60%;
     margin-left: 20%;
     overflow: hidden;
 }
 
-header h1{
+header h1 {
     font-family: 'Araial Black', cursive;
     font-size: 500%;
     text-align: center;
@@ -36,16 +157,17 @@ header h1{
     border-radius: 2px;
 }
 
-header p{
-    font-size:100%;
-    color:#313131;
+header p {
+    font-size: 100%;
+    color: #313131;
     float: left;
 }
 
 /*****div*****/
-.div-left-b{
+
+.div-left-b {
     display: block;
-    float:left;
+    float: left;
     overflow: hidden;
     width: 30%;
     height: 300px;
@@ -56,7 +178,7 @@ header p{
     border-radius: 2px;
 }
 
-.div-left-b p{
+.div-left-b p {
     font-family: 'Araial Black', cursive;
     color: #fff;
     /*letter-spacing: 5px;*/
@@ -65,20 +187,20 @@ header p{
     font-size: 600%;
 }
 
-.div-right-w{
+.div-right-w {
     font-family: "Hiragino Kaku Gothic Std";
     font-weight: bolder;
     display: block;
     overflow: hidden;
     width: 30%;
     height: 300px;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 20px;
     border: 2px solid #5e5959;
     border-radius: 2px;
 }
 
-.div-right-w p{
+.div-right-w p {
     font-family: 'Alex Brush', cursive;
     color: #000000;
     /*letter-spacing: 5px;*/
@@ -87,7 +209,7 @@ header p{
     font-size: 200%;
 }
 
-.div-left-w{
+.div-left-w {
     display: block;
     float: left;
     width: 30%;
@@ -98,7 +220,7 @@ header p{
     margin-bottom: 20px;
 }
 
-.div-left-w p{
+.div-left-w p {
     font-family: 'Alex Brush', cursive;
     color: #000000;
     /*letter-spacing: 5px;*/
@@ -107,7 +229,7 @@ header p{
     font-size: 200%;
 }
 
-.div-right-b{
+.div-right-b {
     display: block;
     overflow: hidden;
     width: 30%;
@@ -118,7 +240,7 @@ header p{
     border-radius: 5px;
 }
 
-.div-right-b p{
+.div-right-b p {
     font-family: 'Alex Brush', cursive;
     color: #fff;
     /*letter-spacing: 5px;*/
@@ -127,13 +249,13 @@ header p{
     font-size: 600%;
 }
 
-.icons{
+.icons {
     overflow: hidden;
     text-align: center;
 }
 
-#svg-animation{
-    background-color:rgba(255, 255, 255, 0.3);
+#svg-animation {
+    background-color: rgba(255, 255, 255, 0.3);
     position: absolute;
     top: 0px;
     right: 0px;
@@ -144,15 +266,15 @@ header p{
     height: 800px;
 }
 
-#svg-animation .st0{
-    fill:none;
+#svg-animation .st0 {
+    fill: none;
     stroke: #ffffff;
-    stroke-width:20;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
     stroke-dasharray: 1500;
-    stroke-dashoffset:1500;
+    stroke-dashoffset: 1500;
 }
 
 .bg {
@@ -175,7 +297,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 0.0s;
@@ -201,7 +322,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 2.5s;
@@ -228,7 +348,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 8.0s;
@@ -255,7 +374,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 6.0s;
@@ -282,7 +400,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 1.5s;
@@ -309,7 +426,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 10.0s;
@@ -336,7 +452,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 9.0s;
@@ -363,7 +478,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 7.0s;
@@ -390,7 +504,6 @@ header p{
     animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  
     -webkit-animation-duration: 11s;
     animation-duration: 11s;
     -webkit-animation-delay: 3.0s;
@@ -407,24 +520,22 @@ header p{
 
 @keyframes Snow {
     0% {
-      transform: translateY(-200px);
-      opacity: 1.0;
+        transform: translateY(-200px);
+        opacity: 1.0;
     }
-  
     100% {
-      transform: translateY(80vh) translateX(200px);
-      opacity: 0.0;
+        transform: translateY(80vh) translateX(200px);
+        opacity: 0.0;
     }
 }
 
 @-webkit-keyframes Snow {
     0% {
-      -webkit-transform: translateY(-200px);
-      opacity: 1.0;
+        -webkit-transform: translateY(-200px);
+        opacity: 1.0;
     }
-  
     100% {
-      -webkit-transform: translateY(80vh) translateX(200px);
-      opacity: 0.5;
+        -webkit-transform: translateY(80vh) translateX(200px);
+        opacity: 0.5;
     }
 }
