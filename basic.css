@@ -130,21 +130,33 @@ body {
 
 .links {
     position: fixed;
-    right: 20%;
-    left: 20%;
+    right: 30%;
+    left: 30%;
     top: 25%;
     bottom: 25%;
+    text-align: center;
 }
 
 .link {
-    display: block;
+    display: inline-block;
     position: relative;
     font-family: 'Anton', sans-serif;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 100;
-    text-align: center;
     margin-bottom: 50px;
     color: white;
+}
+
+.link:hover::before {
+    content: "";
+    position: fixed;
+    display: block;
+    margin-top: 32px;
+    margin-left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 /*****HEADER*****/
