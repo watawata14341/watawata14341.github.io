@@ -1,0 +1,432 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    background-color: rgb(60, 60, 60);
+}
+
+/* Hamburger*/
+.u-visuallyHidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+
+.c-button {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.p-hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    border-radius: 100%;
+    border: 2px solid rgb(20, 20, 20);
+    outline: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.p-hamburger:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, .5);
+}
+
+.p-hamburger__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 18px;
+    height: 2px;
+    background-color: rgb(20, 20, 20);
+    -webkit-transition: inherit;
+    transition: inherit;
+}
+
+.p-hamburger__line::before, .p-hamburger__line::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    -webkit-transition: inherit;
+    transition: inherit;
+}
+
+.p-hamburger__line::before {
+    top: -5px;
+}
+
+.p-hamburger__line::after {
+    top: 5px;
+}
+
+.p-hamburger[aria-expanded="true"] {
+    border: 2px solid white;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line {
+    background-color: transparent;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before, .p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+    top: 0;
+    background-color: white;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);  
+}
+
+.drawer-out {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    transform: translateX(-100%);
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+.is-drawerActive .drawer-out {
+    transform: translateX(0);
+}
+
+.links {
+    position: fixed;
+    right: 30%;
+    left: 30%;
+    top: 25%;
+    bottom: 25%;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.link:hover::before {
+    content: "";
+    position: fixed;
+    display: block;
+    margin-top: 32px;
+    margin-left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icons {
+    overflow: hidden;
+    text-align: center;
+}
+
+.bg {
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.bg .snow1 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 0.0s;
+    animation-delay: 0.0s;
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow2 {
+    opacity: 0;
+    -webkit-transform-origin: 10px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    left: 10vw;
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow3 {
+    opacity: 0;
+    -webkit-transform-origin: 20px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 8.0s;
+    animation-delay: 8.0s;
+    left: 20vw;
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow4 {
+    opacity: 0;
+    -webkit-transform-origin: 30px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 6.0s;
+    animation-delay: 6.0s;
+    left: 30vw;
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow5 {
+    opacity: 0;
+    -webkit-transform-origin: 40px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    left: 40vw;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow6 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 50px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 10.0s;
+    animation-delay: 10.0s;
+    left: 50vw;
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow7 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 60px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 9.0s;
+    animation-delay: 9.0s;
+    left: 60vw;
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow8 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 70px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 7.0s;
+    animation-delay: 7.0s;
+    left: 70vw;
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+.bg .snow9 {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 80px 0px;
+    -webkit-animation-name: Snow;
+    animation-name: Snow;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-delay: 3.0s;
+    animation-delay: 3.0s;
+    left: 80vw;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f7f9fb;
+}
+
+@keyframes Snow {
+    0% {
+        transform: translateY(-200px);
+        opacity: 1.0;
+    }
+    100% {
+        transform: translateY(80vh) translateX(200px);
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes Snow {
+    0% {
+        -webkit-transform: translateY(-200px);
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: translateY(80vh) translateX(200px);
+        opacity: 0.5;
+    }
+}
+
+footer {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    z-index: -1;
+}
+
+footer p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
