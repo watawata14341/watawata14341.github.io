@@ -419,10 +419,10 @@ body {
     display: block;
     position: relative;
     background-color: rgba(255, 255, 255, .5);
-    top: 20%;
-    left: 20%;
-    height: 60vh;
-    width: 60vw;
+    top: 15%;
+    left: 30%;
+    height: 70vh;
+    width: 40vw;
     z-index: -1;
 }
 
