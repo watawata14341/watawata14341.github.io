@@ -6,7 +6,7 @@ body {
     background-color: rgb(60, 60, 60);
 }
 
-/* Hamburger*/
+/* Hamburger */
 .u-visuallyHidden {
     position: absolute;
     white-space: nowrap;
@@ -159,6 +159,8 @@ body {
     text-align: center;
 }
 
+
+/* 背景：雪の部分等 */
 .bg {
     position: fixed;
     background-size: cover;
@@ -413,6 +415,18 @@ body {
     }
 }
 
+.main-block {
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, .5);
+    top: 20%;
+    left: 20%;
+    height: 60vh;
+    width: 60vw;
+    z-index: -1;
+}
+
+/* フッター部分 */
 footer {
     position: fixed;
     height: 40px;
