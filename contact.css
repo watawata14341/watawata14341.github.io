@@ -482,8 +482,21 @@ body {
     text-align: center;
 }
 
+.icons-block path {
+    fill: black;
+    -webkit-transition: fill 0.3s ease-out;
+    -moz-transition: fill 0.3s ease-out;
+    -o-transition: fill 0.3s ease-out;
+    -ms-transition: fill 0.3s ease-out;
+    transition: fill 0.3s ease-out;
+}
+
 .icons-block svg:hover{
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, .8));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, .5));
+}
+
+.icons-block svg:hover path{
+    fill: white;
 }
 
 /* フッター部分 */
