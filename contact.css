@@ -482,6 +482,10 @@ body {
     text-align: center;
 }
 
+.icons-block svg:hover{
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, .8));
+}
+
 /* フッター部分 */
 footer {
     position: fixed;
