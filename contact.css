@@ -155,12 +155,6 @@ body {
     border-radius: 50%;
 }
 
-.icons {
-    overflow: hidden;
-    text-align: center;
-}
-
-
 /* 背景：雪の部分等 */
 .bg {
     position: fixed;
@@ -416,6 +410,8 @@ body {
         opacity: 0.5;
     }
 }
+
+/* main部分 */
 
 #main {
     position: relative;
