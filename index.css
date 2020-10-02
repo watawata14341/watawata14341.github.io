@@ -194,6 +194,11 @@ body {
 .prof-his{
     position: relative;
     display: block;
+}
+
+.prof-his-left{
+    position: relative;
+    display: inline-block;
     left: 10%;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
