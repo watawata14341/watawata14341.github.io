@@ -167,7 +167,7 @@ body {
     position: relative;
     top: 50px;
     left: 60%;
-    height: 400px;
+    height: 500px;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -194,15 +194,39 @@ body {
 .prof-his{
     position: relative;
     display: block;
+    left: 10%;
 }
 
 .prof-his-left{
     position: relative;
     display: inline-block;
-    left: 10%;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 22px;
+}
+
+.prof-his-left p{
+    display: inline;
+}
+
+.prof-his-mid{
+    position: relative;
+    display: inline-block;
+}
+
+.prof-his-mid p{
+    display: inline;
+}
+
+.prof-his-right{
+    position: relative;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+.prof-his-right p{
+    display: inline;
 }
 
 .prof-amb{
