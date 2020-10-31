@@ -411,12 +411,19 @@ body {
     }
 }
 
+/* header部分 */
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 100vw;
+}
+
 /* main部分 */
 
 #main {
     position: relative;
     background-color: rgba(255, 255, 255, .5);
-    top: 20%;
+    top: 5%;
     margin: auto;
     height: 60vh;
     width: 450px;
